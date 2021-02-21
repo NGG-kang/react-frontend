@@ -1,16 +1,20 @@
 import React from 'react';
-import { Button } from 'antd';
 import 'App.css';
+import Counter from 'Counter';
+import Message from 'Message';
+import Profile from 'Profile';
 
-function App() {
-  return (
-    <div>
-      <button>Hello React</button>
-      <Button type="primary" onClick={() => console.log('clicked')}>
-        Hello, Antd
-      </Button>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Profile />
+        <Message />
+        <Counter color="green" />
+        <Counter color="blue" />
+        <Counter />
+      </div>
+    );
+  }
 }
-
 export default App;
